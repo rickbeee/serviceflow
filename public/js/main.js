@@ -54,3 +54,18 @@ if (select) {
     select.form.submit();
   });
 }
+
+// ==============================
+// SCROLL TO TOP
+// ==============================
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}

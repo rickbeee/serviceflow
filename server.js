@@ -16,7 +16,10 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.render("home", { pageTitle: "Home" });
+  res.render("home", {
+    pageTitle: "Home",
+    featuredServices: services.slice(0, 4)
+  });
 });
 
 app.get("/services", (req, res) => {

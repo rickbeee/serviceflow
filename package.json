@@ -1,6 +1,7 @@
 {
   "name": "service-directory",
   "version": "1.0.0",
+  "description": "A small Express and EJS service directory website for ServiceFlow.",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
